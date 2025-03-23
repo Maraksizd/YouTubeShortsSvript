@@ -54,7 +54,7 @@ class YouTubeShortsUploader
             var (title, description) = GetVideoDetails(videoPath); // додавання заголовку і опису
             var video = new Video
             {
-                Snippet = new VideoSnippet { Title = title, Description = description, CategoryId = "22" },
+                Snippet = new VideoSnippet { Title = title, Description = description, CategoryId = "22" }, // You can change the category ID
                 Status = new VideoStatus { PrivacyStatus = "public" }
             };
 
